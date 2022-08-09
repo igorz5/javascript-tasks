@@ -1,6 +1,5 @@
 const openModalBtn = document.querySelector(".btn-open-modal");
 
-let modalIsOpen = false;
 let modal;
 
 const texts = [
@@ -46,10 +45,10 @@ function openModal() {
 }
 
 function closeModal() {
-  if (modal) {
-    modal.remove();
-    modal = null;
-  }
+  if (!modal) return;
+
+  modal.remove();
+  modal = null;
 }
 
 openModalBtn.addEventListener("click", openModal);

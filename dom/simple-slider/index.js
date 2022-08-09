@@ -46,10 +46,10 @@ function scrollToPrev() {
   }
 }
 
-sliderNext.addEventListener("click", function (e) {
+sliderNext.addEventListener("click", function () {
   scrollToNext();
 });
 
-sliderPrev.addEventListener("click", function (e) {
+sliderPrev.addEventListener("click", function () {
   scrollToPrev();
 });
